@@ -6,6 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Conheça um pouco mais sobre o criador deste quiz">
         <style>
+            .foto-perfil {
+                width: 150px;
+                height: 150px;
+                min-width: 150px; 
+                min-height: 150px; 
+                border-radius: 50%;
+                border: 3px solid #00d4ff;
+                object-fit: cover;
+                display: block;    
+                margin: 0 auto 10px auto; 
+            }
             body {
                 background-color: #1a1a2e;
                 color: #ffffff;
@@ -33,24 +44,41 @@
                 border-radius: 10px;
                 margin-top: 20px;
             }
-            /* Esta classe abaixo vai tirar o espaço entre os parágrafos */
+            .lista-habilidades {
+                list-style: none; 
+                padding: 0;
+            }
+            .lista-habilidades li{
+                background-color: #1a1a2e;
+                margin-bottom: 10px;
+                pedding: 10px 15px;
+                border-left: 4px solidm #00d4ff;
+                border-radius: 5px;
+            }
             .coladinho {
-                margin-top: -15px; /* Sobe o texto para perto do anterior */
-                font-size: 0.9em;  /* Deixa um pouquinho menor para dar um estilo de legenda */
-                color: #cccccc;    /* Um cinza claro para diferenciar */
+                margin-top: -15px;  
+                font-size: 0.9em;
+                color: #cccccc;    
             }
         </style>
     </head>
     <body>
-        <header>
+        <header style="text-align: center;"> <img src="perfilgit.jpg" alt="Foto de Manoel Lima" class="foto-perfil">
             <h1>Manoel Lima - Dev em Construção</h1>
         </header>
         <main>
             <section>
-                <p>Opa! Estou em transição para a área de tecnologia, focando meus estudos em Desenvolvimento Web (HTML, CSS e Git).</p>
+                <p>Opa! Estou em transição para a área de tecnologia, focando meus estudos em Desenvolvimento Web.</p>
                 <p>Acredito na prática constante e estou construindo este portfólio para documentar minha jornada e meus projetos.</p>
             </section>
-
+            <section>   
+                <h2>Minhas Habilidades</h2>
+                <ul class="lista-habilidades">
+                    <li><strong>HTML5</strong> (Estrutura de sites)</li>
+                    <li><strong>CSS3</strong> (Estilização e Design)</li>
+                    <li><strong>Git & GitHub</strong> (Controle de Versão)</li>
+                </ul>
+            </section>
             <section>
                 <h2>Projetos</h2>
                 <p>Recentemente criei um <strong>Quiz para Programadores</strong> usando HTML e CSS.</p>
